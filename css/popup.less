@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('functions.less');
+@import url('vars.less');
+
+@font-family: 'Roboto', sans-serif;
+
+body{
+  min-width: 200px;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px dashed #CCC;
+}
+h1{
+  font-family: @font-family;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: center;
+
+  .fnc_arredonda(3px);
+
+  background-color: @cor-principal;
+  color: #FFF;
+}
+
+h2{
+  font-family: @font-family;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 5px;
+  text-transform: uppercase;
+  color: #999;
+  border-bottom: 1px dashed #999;
+}
+
+button{
+  font-family: @font-family;
+  font-size: 10px;
+  border: 0;
+  box-shadow: none;
+  padding: 3px 5px;
+  cursor: pointer;
+
+  margin-bottom: 5px;
+
+  .fnc_arredonda(3px);
+
+  background-color: #666;
+  color: #FFF;
+
+  &:hover{
+    background-color: @cor-principal;
+  }
+}

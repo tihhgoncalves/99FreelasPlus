@@ -1,0 +1,31 @@
+{
+    "name"            : "99Freelas Plus",
+    "description"     : "Pacotes de funções especiais para o 99Freelas",
+    "manifest_version": 2,
+    "version"         : "0.0.1",
+
+    "icons": {
+        "24" : "icons/24.png",
+        "48" : "icons/48.png",
+        "128": "icons/128.png",
+        "256": "icons/256.png"
+    },
+    "browser_action" : {
+
+        "default_title" : "Proud Moment",
+        "default_popup" : "html/popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [ "*://*.99freelas.com.br/*" ],
+            "js"     : [ "js/jquery.min.js", "js/script.js", "js/rhinoJS.js" ]
+        }
+    ],
+
+    "permissions": [
+        "tabs",
+        "*://*.99freelas.com.br/*",
+        "activeTab"
+    ]
+}
